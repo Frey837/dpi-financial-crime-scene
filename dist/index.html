@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-led reconstruction of Divorce Party International Ltd. at 31 August 2026.">
+  <title>DPI financial reconstruction</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1118'/%3E%3Cpath d='M15 45h34M19 39V24m9 15V17m9 22V28m9 11V12' stroke='%23f0b35a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-page="analysis">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="DPI reconstruction home">
+      <span class="brand-mark" aria-hidden="true">DPI</span>
+      <span>31 Aug 2026 reconstruction</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a class="active" href="/">Analysis</a>
+      <a href="/review/">Reviewer view</a>
+      <a href="/submission.json">Submission JSON</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="command-strip" aria-labelledby="case-heading">
+      <div>
+        <p class="eyebrow">DPI-HT-01 · EUR · evidence-led close</p>
+        <h1 id="case-heading">Management profit does not survive reconciliation.</h1>
+        <p class="lede">The corrected accounts replace unsupported classifications with bank, contract, supplier, warehouse and legal evidence.</p>
+      </div>
+      <div class="verdict">
+        <span>Board position</span>
+        <strong>Do not use €312k for the earn-out</strong>
+        <small>Corrected net profit: €74k</small>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Key corrected balances">
+      <article class="metric critical">
+        <span>Net profit</span>
+        <strong>€74k</strong>
+        <small>€238k below management</small>
+      </article>
+      <article class="metric">
+        <span>Closing cash</span>
+        <strong>€60k</strong>
+        <small>Agrees to bank confirmation</small>
+      </article>
+      <article class="metric">
+        <span>Total assets</span>
+        <strong>€540k</strong>
+        <small>Cash + AR + inventory + PPE</small>
+      </article>
+      <article class="metric">
+        <span>Liabilities</span>
+        <strong>€406k</strong>
+        <small>Includes €90k customer deposits</small>
+      </article>
+      <article class="metric">
+        <span>Closing equity</span>
+        <strong>€134k</strong>
+        <small>After €110k distributions</small>
+      </article>
+    </section>
+
+    <section class="grid two-column">
+      <article class="panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Reconciliation status</p>
+            <h2>Eight checks, one material conflict</h2>
+          </div>
+          <span class="status status-watch">Review</span>
+        </div>
+        <div class="check-list">
+          <div><span>Balance sheet</span><strong>€0 difference</strong></div>
+          <div><span>Cash roll-forward</span><strong>€60k confirmed</strong></div>
+          <div><span>Revenue and receivables</span><strong>Reconciled</strong></div>
+          <div><span>Inventory and COGS</span><strong>€9k count variance</strong></div>
+          <div><span>PPE and depreciation</span><strong>Reconciled</strong></div>
+          <div><span>Debt and interest</span><strong>Reconciled</strong></div>
+          <div><span>Equity roll-forward</span><strong>Reconciled</strong></div>
+        </div>
+      </article>
+
+      <article class="panel evidence-rank">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Evidence hierarchy</p>
+            <h2>What controls the answer</h2>
+          </div>
+        </div>
+        <ol>
+          <li><span>01</span><div><strong>Bank and signed contracts</strong><small>Cash, debt and completed revenue</small></div></li>
+          <li><span>02</span><div><strong>Third-party confirmations</strong><small>Suppliers, lawyer, liquidator</small></div></li>
+          <li><span>03</span><div><strong>Warehouse and delivery records</strong><small>Inventory condition and fulfilment</small></div></li>
+          <li><span>04</span><div><strong>Management files and messages</strong><small>Used as leads, never as final truth</small></div></li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="panel next-panel">
+      <div>
+        <p class="eyebrow">Full case file</p>
+        <h2>Trace each number to the underlying decision.</h2>
+        <p>Review the statements, schedules, 100 decisions and the independent-agent disagreement behind the inventory conclusion.</p>
+      </div>
+      <a class="button" href="/review/">Open reviewer view</a>
+    </section>
+
+    <section class="section-block" id="statements">
+      <div class="section-heading">
+        <div><p class="eyebrow">Corrected accounts</p><h2>Three statements</h2></div>
+        <p>Count-based primary case. Amounts in EUR.</p>
+      </div>
+      <div class="statement-grid" id="statement-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-block" id="schedules">
+      <div class="section-heading">
+        <div><p class="eyebrow">Supporting calculations</p><h2>Schedules</h2></div>
+        <p>Each closing balance can be rebuilt from opening balances and period activity.</p>
+      </div>
+      <div class="schedule-grid" id="schedule-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-block" id="decisions">
+      <div class="section-heading decision-heading">
+        <div><p class="eyebrow">Complete answer set</p><h2>100 decisions</h2></div>
+        <div class="decision-controls">
+          <label><span>Search</span><input id="decision-search" type="search" placeholder="ID, question or answer"></label>
+          <label><span>Tier</span><select id="decision-tier"><option value="all">All decisions</option><option value="material_judgment">25 material judgments</option><option value="operational">75 operational</option></select></label>
+        </div>
+      </div>
+      <p class="result-count" id="decision-count"></p>
+      <div class="decision-list" id="decision-list" aria-live="polite"></div>
+    </section>
+
+    <section class="section-block split-section" id="evidence">
+      <div>
+        <div class="section-heading compact"><div><p class="eyebrow">Source register</p><h2>Evidence</h2></div></div>
+        <div class="table-shell"><table><thead><tr><th>File</th><th>Reliability</th><th>Finding</th></tr></thead><tbody id="evidence-body"></tbody></table></div>
+      </div>
+      <div>
+        <div class="section-heading compact"><div><p class="eyebrow">Control totals</p><h2>Reconciliations</h2></div></div>
+        <div class="reconciliation-list" id="reconciliation-list"></div>
+      </div>
+    </section>
+
+    <section class="section-block" id="uncertainty">
+      <div class="section-heading">
+        <div><p class="eyebrow">Visible limits</p><h2>Uncertainty</h2></div>
+        <p>No unresolved item is hidden inside a balancing entry.</p>
+      </div>
+      <div class="uncertainty-grid" id="uncertainty-grid"></div>
+    </section>
+
+    <section class="board-panel" id="board-recommendation">
+      <div>
+        <p class="eyebrow">Board recommendation</p>
+        <h2 id="board-decision"></h2>
+        <p id="board-rationale"></p>
+      </div>
+      <div>
+        <p class="mini-title">Immediate actions</p>
+        <ol id="board-actions"></ol>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
