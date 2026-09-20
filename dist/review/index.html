@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compact reviewer view for DPI-HT-01.">
+  <title>DPI reviewer view</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1118'/%3E%3Cpath d='M15 45h34M19 39V24m9 15V17m9 22V28m9 11V12' stroke='%23f0b35a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-page="review">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="DPI reconstruction home"><span class="brand-mark" aria-hidden="true">DPI</span><span>Assessor review</span></a>
+    <nav aria-label="Primary navigation"><a href="/">Analysis</a><a class="active" href="/review/">Reviewer view</a><a href="/submission.json">Submission JSON</a></nav>
+  </header>
+
+  <main class="review-main">
+    <section class="review-title">
+      <div>
+        <p class="eyebrow">DPI-HT-01 · Nils Kosenčuks · nk25004</p>
+        <h1>Material judgment review</h1>
+        <p class="lede">Two independent analyses agree on every material treatment except the €9,000 inventory/COGS conflict.</p>
+      </div>
+      <div class="review-profit"><span>Certified primary case</span><strong>€74k</strong><small>Alternative: €65k</small></div>
+    </section>
+
+    <section class="review-metrics" aria-label="Review flags">
+      <button type="button" data-review-filter="disagreement"><span>Agent disagreements</span><strong id="review-disagreements">0</strong></button>
+      <button type="button" data-review-filter="override"><span>Student overrides</span><strong id="review-overrides">0</strong></button>
+      <button type="button" data-review-filter="low"><span>Low confidence</span><strong id="review-low">0</strong></button>
+      <button type="button" data-review-filter="all" class="active"><span>Material judgments</span><strong id="review-material">25</strong></button>
+    </section>
+
+    <section class="review-alert">
+      <div><span class="status status-watch">Unresolved</span><strong>Inventory closes at €121k in the selected case.</strong></div>
+      <p>The physical count implies €396k product COGS. The internal consumption record says €405k, which would lower inventory, profit and equity by €9k.</p>
+    </section>
+
+    <section class="review-toolbar">
+      <label><span>Search judgments</span><input id="review-search" type="search" placeholder="Decision ID or topic"></label>
+      <p id="review-count"></p>
+    </section>
+    <section class="trail-list" id="trail-list" aria-live="polite"></section>
+
+    <section class="section-block review-uncertainties">
+      <div class="section-heading compact"><div><p class="eyebrow">Open items</p><h2>Uncertainty register</h2></div></div>
+      <div class="uncertainty-grid" id="review-uncertainty-grid"></div>
+    </section>
+  </main>
+</body>
+</html>
